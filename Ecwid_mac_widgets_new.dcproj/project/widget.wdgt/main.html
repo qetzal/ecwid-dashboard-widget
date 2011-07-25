@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+    <script type="text/javascript" src="jquery16.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleScrollbar.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleScrollArea.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+    <div id="front">
+        <img id="frontImg" src="Parts/Images/front.png" alt="">
+        <div id="info" onmouseover="show(event)" onmouseout="hide(event)"><div style="position: absolute; top: 0px; left: 0px; width: 13px; height: 13px; opacity: 0.25; visibility: hidden; background-image: url(file:///System/Library/WidgetResources/ibutton/black_rollie.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 0%; background-repeat: no-repeat no-repeat; "></div><img tabindex="0" role="button" style="outline-width: 0px; outline-style: initial; outline-color: initial; position: absolute; top: 0px; left: 0px; opacity: 0; " width="13" height="13" alt="Info" aria-label="Info" src="file:///System/Library/WidgetResources/ibutton/white_i.png"></div>
+        <div id="orders" onclick="open_my_ecwid(event)">Loading</div>
+        <div id="image"><img src="Images/ecwid_logo_128x128.png" id="inner_image"></div>
+    </div>
+    <div id="back">
+        <img id="backImg" src="Parts/Images/back.png" alt="">
+        <div id="done" onclick="showFront(event)"><div tabindex="0" role="button" style="height: 23px; -apple-dashboard-region: dashboard-region(control rectangle); " aria-disabled="false"><div style="display: inline-block; vertical-align: bottom; background-image: url(file:///System/Library/WidgetResources/button/glassbuttonleft.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; height: 23px; width: 10px; background-position: 0% 0%; background-repeat: no-repeat no-repeat; "></div><div style="display: inline-block; vertical-align: bottom; background-image: url(file:///System/Library/WidgetResources/button/glassbuttonmiddle.png); line-height: 23px; height: 23px; overflow-x: hidden; overflow-y: hidden; white-space: nowrap; font-size: 12px; font-family: 'Helvetica Neue'; font-weight: bold; color: white; background-repeat: repeat no-repeat; ">Done</div><div style="display: inline-block; vertical-align: bottom; background-image: url(file:///System/Library/WidgetResources/button/glassbuttonright.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; height: 23px; width: 10px; background-position: 0% 0%; background-repeat: no-repeat no-repeat; "></div></div></div>
+        <input id="apikey" type="text" name="" value="">
+        <input id="storeid" type="text" name="" value="">
+        <div id="text">Store ID</div>
+        <div id="text1">Auth key</div>
+    </div>
+</body>
+</html>
